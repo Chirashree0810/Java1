@@ -1,24 +1,48 @@
-class Employee{
-     private int id;
-     private String name;
-     private double salary;
-     public Employee(int id,String name,double salary){
-         this.id=id;
-         this.name=name;
-         this.salary=salary;}
-     public void raiseSalary(double percent){
-         if (percent>0){
-             double increment =salary*percent/100;
-             salary=salary+increment;
-             System.out.println("New salary:"+salary);}}
-     public void getEmpDetails(){
-        System.out.println(name+" "+id+" "+salary);}}
-             
-public class C7 {
-    public static void main(String[] args){
-        Employee emp1=new Employee(1,"Kuthyar",5000);
-        emp1.getEmpDetails();
-        emp1.raiseSalary(10);
-        emp1.getEmpDetails();
-    }
-}
+
+class MyPoint1{
+    private int x;
+    private int y;
+    public MyPoint1(){
+        this.x=0;
+        this.y=0;}
+    public MyPoint1(int x,int y){
+        this.x=x;
+        this.y=y;}
+    public void setXY(int x, int y){
+        this.x=x;
+        this.y=y;}
+    public int[] getXY(){
+        int[] points={x,y};
+        return points;}
+    public double distance (int x, int y){
+        int xDiff=this.x-x;
+        int yDiff=this.y-y;
+        return Math.sqrt(xDiff*xDiff + yDiff*yDiff);}
+    public double distance(){
+        return Math.sqrt(x*x + y*y);}}
+public class C7{
+     public static void main(String[] args){
+        MyPoint1 point1=new MyPoint1();
+        point1.setXY(1,2);
+        int[]points=point1.getXY();
+        System.out.print("point1 coordinates are");
+        System.out.print(points[0]+","+points[1]+"\n");
+        System.out.println(point1.distance(5,6));
+        System.out.println(point1.distance());}}
+
+        
+        
+    
+    
+
+    
+    
+        
+    
+ 
+     
+         
+    
+
+    
+
