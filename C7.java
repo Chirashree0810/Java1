@@ -20,7 +20,7 @@ class MyPoint1{
         return Math.sqrt(xDiff*xDiff + yDiff*yDiff);}
     public double distance(){
         return Math.sqrt(x*x + y*y);}}
-public class C7{
+public class C16{
      public static void main(String[] args){
         MyPoint1 point1=new MyPoint1();
         point1.setXY(1,2);
