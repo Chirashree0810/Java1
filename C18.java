@@ -8,7 +8,7 @@ public class C18 {
         double c = scanner.nextDouble();
 
         double f = (c * 9 / 5) + 32;
-
+        
         System.out.println(c + "°C = " + f + "°F");
     }
 }
